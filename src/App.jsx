@@ -4,8 +4,8 @@ import useCurrencyInfo from "./hooks/useCurrencyInfo";
 
 function App() {
   const [amount, setAmount] = useState(0);
-  const [from, setFrom] = useState("usd");
-  const [to, setTo] = useState("inr");
+  const [from, setFrom] = useState("inr");
+  const [to, setTo] = useState("usd");
   const [convertedAmount, setConvertedAmount] = useState(0);
 
   const currencyInfo = useCurrencyInfo(from);
@@ -33,7 +33,7 @@ function App() {
       }}
     >
       <div className="w-full">
-        <div className="w-full max-w-md mx-auto border border-gray-100 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div className="w-full max-w-lg mx-auto border border-gray-100 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
               e.preventDefault();
