@@ -40,6 +40,9 @@ function App() {
               convert();
             }}
           >
+            <h1 className="text-center text-oringe-600 bg-orange-400 rounded-lg m-1 h-12 text-3xl">
+              Currency Converter
+            </h1>
             <div className="w-full mb-1">
               <InputBox
                 label="From"
@@ -77,6 +80,9 @@ function App() {
             </button>
           </form>
         </div>
+        <h1 className="text-2xl absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-red-100 rounded-lg w-40 text-center pb-2">
+          By Krishna
+        </h1>
       </div>
     </div>
   );
